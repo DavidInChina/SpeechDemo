@@ -26,7 +26,6 @@ public class MainActivity extends Activity implements OnClickListener {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.main);
-		
 		mToast = Toast.makeText(this, "", Toast.LENGTH_SHORT);
 		SimpleAdapter listitemAdapter = new SimpleAdapter();
 		((ListView) findViewById(R.id.listview_main)).setAdapter(listitemAdapter);

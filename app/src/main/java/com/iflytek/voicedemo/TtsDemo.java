@@ -34,7 +34,7 @@ public class TtsDemo extends Activity implements OnClickListener {
 	private SpeechSynthesizer mTts;
 
 	// 默认发音人
-	private String voicer = "xiaoyan";
+	private String voicer = "catherine";
 	
 	private String[] mCloudVoicersEntries;
 	private String[] mCloudVoicersValue ;
@@ -59,18 +59,14 @@ public class TtsDemo extends Activity implements OnClickListener {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.ttsdemo);
-		
 		initLayout();
 		// 初始化合成对象
 		mTts = SpeechSynthesizer.createSynthesizer(TtsDemo.this, mTtsInitListener);
-		
 		// 云端发音人名称列表
 		mCloudVoicersEntries = getResources().getStringArray(R.array.voicer_cloud_entries);
 		mCloudVoicersValue = getResources().getStringArray(R.array.voicer_cloud_values);
-				
 		mSharedPreferences = getSharedPreferences(TtsSettings.PREFER_NAME, MODE_PRIVATE);
 		mToast = Toast.makeText(this,"",Toast.LENGTH_SHORT);
-		
 		mInstaller = new  ApkInstaller(TtsDemo.this);
 	}
 
@@ -84,10 +80,8 @@ public class TtsDemo extends Activity implements OnClickListener {
 		findViewById(R.id.tts_resume).setOnClickListener(TtsDemo.this);
 		findViewById(R.id.image_tts_set).setOnClickListener(TtsDemo.this);
 		findViewById(R.id.tts_btn_person_select).setOnClickListener(TtsDemo.this);
-		
 		mRadioGroup=((RadioGroup) findViewById(R.id.tts_rediogroup));
 		mRadioGroup.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-
 			@Override
 			public void onCheckedChanged(RadioGroup group, int checkedId) {
 				switch (checkedId) {
@@ -141,7 +135,6 @@ public class TtsDemo extends Activity implements OnClickListener {
 		case R.id.tts_play:
 			// 移动数据分析，收集开始合成事件
 			FlowerCollector.onEvent(TtsDemo.this, "tts_play");
-			
 			String text = ((EditText) findViewById(R.id.tts_text)).getText().toString();
 			// 设置参数
 			setParam();
@@ -304,8 +297,7 @@ public class TtsDemo extends Activity implements OnClickListener {
 
 	/**
 	 * 参数设置
-	 * @param param
-	 * @return 
+	 * @return
 	 */
 	private void setParam(){
 		// 清空参数
