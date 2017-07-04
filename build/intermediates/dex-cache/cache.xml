@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/davidinchina/Documents/gitWork/SpeechDemo/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aad30f50f0b54f8d6a8c583c1dab69c7af53ee1d">
+        <dex dex="/Users/davidinchina/Documents/gitWork/SpeechDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_f012afc65b20f2d5468646129cef678d6a0e1483/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/davidinchina/Documents/gitWork/SpeechDemo/app/libs/Sunflower.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b7d75c00e44aa37f3461a6982a4a15558b4a9a1d">
+        <dex dex="/Users/davidinchina/Documents/gitWork/SpeechDemo/app/build/intermediates/transforms/dex/debug/folders/1000/2/Sunflower_af01bc7f80dbc19f1a2fd86f85502c1ee7f64ebd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/davidinchina/Documents/gitWork/SpeechDemo/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/davidinchina/Documents/gitWork/SpeechDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_64fc05287bbd1e181c80f33ecf4322b229112cfa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/davidinchina/Documents/gitWork/SpeechDemo/app/libs/Msc.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4f11330834f00ecbf76acef91a5e3be24b99f9fd">
+        <dex dex="/Users/davidinchina/Documents/gitWork/SpeechDemo/app/build/intermediates/transforms/dex/debug/folders/1000/2/Msc_ca013301ab4953de56516ba9180f710b8cbcbacc/classes.dex" />
+    </item>
+
+</items>
